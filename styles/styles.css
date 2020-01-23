@@ -265,6 +265,7 @@ html {
   opacity: 1;
   color: white;
   display: block;
+  pointer-events: all;
 }
 
 .topNavFlex ul {
@@ -318,6 +319,7 @@ html {
   font-size: 3rem;
   width: 50px;
   display: none;
+  z-index: 3;
 }
 
 @media (max-width: 780px) {
@@ -347,6 +349,7 @@ header {
   -webkit-box-shadow: inset 0 0 0 2000px rgba(8, 7, 16, 0.7);
           box-shadow: inset 0 0 0 2000px rgba(8, 7, 16, 0.7);
   background-size: cover;
+  z-index: 1;
 }
 
 header img {
@@ -417,7 +420,7 @@ img {
 h1 {
   font-size: 8rem;
   margin: 10px 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 @media (max-width: 450px) {
@@ -439,7 +442,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  z-index: 2;
+  z-index: 1;
 }
 
 @media (max-width: 450px) {
@@ -452,7 +455,7 @@ h5 {
   color: #009c9e;
   font-size: 2.4rem;
   text-transform: uppercase;
-  z-index: 2;
+  z-index: 1;
 }
 
 @media (max-width: 450px) {
@@ -871,8 +874,8 @@ textarea {
   }
 }
 
-input[type=email],
-[type=text] {
+input[type='email'],
+[type='text'] {
   background: none;
   border: none;
   border-bottom: 2px solid #009c9e;
@@ -884,15 +887,15 @@ input[type=email],
 }
 
 @media (max-width: 1024px) {
-  input[type=email],
-  [type=text] {
+  input[type='email'],
+  [type='text'] {
     padding-top: 20px;
   }
 }
 
 @media (max-width: 450px) {
-  input[type=email],
-  [type=text] {
+  input[type='email'],
+  [type='text'] {
     font-size: 1.5rem;
   }
 }
