@@ -1,0 +1,11 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+footer {
+    background: $black;
+    text-align: center;
+
+    p {
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,76 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.topNavFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 30px;
+
+  @include mid {
+    align-items: flex-start;
+  }
+
+  h4 {
+    font-size: 2.8rem;
+    margin-bottom: -4px;
+  }
+
+  .clicked {
+    opacity: 1;
+    color: white;
+    display: block;
+  }
+  ul {
+    display: flex;
+    position: relative;
+
+    @include mid {
+      display: inline-block;
+      position: fixed;
+      right: 5%;
+      background: $black;
+      z-index: 2;
+      border-radius: 8px;
+      opacity: 0;
+      transition: all 0.8s;
+      padding: 30px;
+      pointer-events: none;
+    }
+  }
+
+  li {
+    font-size: 2rem;
+    padding: 0px 25px;
+    transition: all 0.5s;
+
+    &:hover,
+    :focus {
+      color: $accentColour;
+    }
+
+    @include mid {
+      padding-bottom: 20px;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.hiddenNav {
+  position: fixed;
+  right: 1%;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  font-size: 3rem;
+  width: 50px;
+  display: none;
+
+  @include mid {
+    display: block;
+  }
+
+  @include mobile {
+    right: -5%;
+  }
+}

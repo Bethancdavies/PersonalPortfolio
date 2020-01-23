@@ -1,0 +1,26 @@
+// Mix-ins 
+@mixin aboutMe {
+    @media (max-width:1176px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width:1024px) {
+        @content;
+    }
+}
+
+@mixin mid {
+    @media (max-width:780px) {
+        @content;
+    }
+}
+
+// mobile:
+
+@mixin mobile {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
