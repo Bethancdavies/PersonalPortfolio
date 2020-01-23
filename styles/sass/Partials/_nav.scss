@@ -63,6 +63,9 @@
     display: block;
     z-index: 3;
   }
+  @include mobile {
+    right: -5%;
+  }
 }
 
 .hiddenNav {
@@ -70,11 +73,6 @@
   right: 1%;
   padding: 0;
   margin: 0;
-
   font-size: 3rem;
   width: 50px;
-
-  @include mobile {
-    right: -5%;
-  }
 }

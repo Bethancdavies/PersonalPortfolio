@@ -321,6 +321,12 @@ html {
   }
 }
 
+@media (max-width: 450px) {
+  .mainNav i {
+    right: -5%;
+  }
+}
+
 .hiddenNav {
   position: fixed;
   right: 1%;
@@ -328,12 +334,6 @@ html {
   margin: 0;
   font-size: 3rem;
   width: 50px;
-}
-
-@media (max-width: 450px) {
-  .hiddenNav {
-    right: -5%;
-  }
 }
 
 footer {
